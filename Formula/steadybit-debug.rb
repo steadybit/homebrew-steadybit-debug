@@ -5,20 +5,20 @@
 class SteadybitDebug < Formula
   desc "Tool to gather debugging information from (on-premise) Steadybit platforms and agents"
   homepage "https://github.com/steadybit/steadybit-debug"
-  version "1.3.2"
+  version "1.3.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/steadybit/steadybit-debug/releases/download/v1.3.2/steadybit-debug_darwin_amd64.tar.gz"
-      sha256 "2eeed8cee5856fb09e3e4cb06f13ca5fe5842cc5fa13b9ab6318729a2275cb81"
+      url "https://github.com/steadybit/steadybit-debug/releases/download/v1.3.3/steadybit-debug_darwin_amd64.tar.gz"
+      sha256 "f703ff5cc78cbeadb2d0df3c7266a5d40482f69bc923e8d6610699b5d48f468a"
 
       def install
         bin.install "steadybit-debug"
       end
     end
     on_arm do
-      url "https://github.com/steadybit/steadybit-debug/releases/download/v1.3.2/steadybit-debug_darwin_arm64.tar.gz"
-      sha256 "e9f5a4ec0be927d09596b0455116067a4c753d83e9a374bcea4bba4669c24b40"
+      url "https://github.com/steadybit/steadybit-debug/releases/download/v1.3.3/steadybit-debug_darwin_arm64.tar.gz"
+      sha256 "aae1fc3dd086f6f9f2c9f5d37deb024e0d0f8b90bd9037eb94d133faea7eccc1"
 
       def install
         bin.install "steadybit-debug"
@@ -29,8 +29,8 @@ class SteadybitDebug < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steadybit/steadybit-debug/releases/download/v1.3.2/steadybit-debug_linux_amd64.tar.gz"
-        sha256 "946f1bc49f04bc6a39e5823ebf07e7414a7a99b1c6fe38b030eda1bb18f897cd"
+        url "https://github.com/steadybit/steadybit-debug/releases/download/v1.3.3/steadybit-debug_linux_amd64.tar.gz"
+        sha256 "ec36dd316a3ab786cba7f981cd1d1114dda7c8fb49193d5d31bdff1db51154cf"
 
         def install
           bin.install "steadybit-debug"
@@ -39,8 +39,8 @@ class SteadybitDebug < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steadybit/steadybit-debug/releases/download/v1.3.2/steadybit-debug_linux_arm64.tar.gz"
-        sha256 "fd4f443dc88a6cb01dbc6feff6dca7b96d8397cb1c3e3826afb802ef02fca3ee"
+        url "https://github.com/steadybit/steadybit-debug/releases/download/v1.3.3/steadybit-debug_linux_arm64.tar.gz"
+        sha256 "41d091cdde06b6168805d2cb6552f75fbc2adbac852295f21a518b01e5bca032"
 
         def install
           bin.install "steadybit-debug"
